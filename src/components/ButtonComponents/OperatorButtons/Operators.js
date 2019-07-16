@@ -19,7 +19,9 @@ const Operators = () => {
        it any props needed by the child component*/}
 
         {operState.map((oper, index) => ( 
-         <OperatorButton oper={oper} key={index} />
+         <OperatorButton char={oper.char} 
+         value = {oper.value}
+         key={index} />
        ))};
 
 
